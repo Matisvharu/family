@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Familiares</title>
+    <link rel="stylesheet" href="css/carta.css">
+</head>
+<body>
+    <header>
+        <h1>Cartas Familiares</h1>
+    </header>
+
+    <div id="nota-container">
+        <div class="input-container">
+            <textarea id="carta" placeholder="Escribe tu nota..."></textarea>
+            <div class="button-container">
+                <button onclick="guardarNota()">Guardar Nota</button>
+                <button onclick="borrarNotas()">Borrar Todas las Notas</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor donde se muestran los puntos de las notas -->
+    <div id="cartas-container"></div>
+
+    <!-- Contenedor para mostrar el texto de la nota -->
+    <div id="nota-display" class="hidden">
+        <p id="nota-texto"></p>
+        <button class="volver" onclick="cerrarNota()">Volver</button>
+    </div>
+
+    <script src="js/carta.js"></script>
+</body>
+</html>

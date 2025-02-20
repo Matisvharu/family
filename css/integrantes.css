@@ -1,0 +1,125 @@
+/* Fuente vintage */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f5e1c8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+header {
+    background: linear-gradient(to right, #6d4c41, #8b5a2b); /* Tonos cálidos vintage */
+    color: #f5e1c8;
+    text-align: center;
+    padding: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 5px solid #4e342e;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Borde decorativo */
+header::before, header::after {
+    content: "✦ ✧ ✦";
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e5c3a6;
+}
+
+header::before {
+    left: 15px;
+}
+
+header::after {
+    right: 15px;
+}
+
+/* Botón de regreso */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #a07855;
+    color: #f5e1c8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid #f5e1c8;
+}
+
+a:hover {
+    background: #8b5a2b;
+    border-color: #d7b899;
+}
+
+/* Contenedor de las tarjetas */
+#family-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+/* Tarjetas de los miembros */
+.family-member {
+    background: #f5deb3;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #8b5a2b;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Efecto al pasar el mouse */
+.family-member:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo de las imágenes */
+.family-member img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #8b5a2b;
+    filter: sepia(40%) contrast(1.1);
+}
+
+/* Nombres */
+.family-member h2 {
+    margin: 10px 0;
+    color: #4e342e;
+    font-weight: bold;
+}
+
+/* Descripciones */
+.family-member p {
+    font-size: 14px;
+    color: #5d4037;
+    font-style: italic;
+}
+
+/* Bordes envejecidos */
+.family-member::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+    opacity: 0.5;
+    border-radius: 15px;
+    pointer-events: none;
+}

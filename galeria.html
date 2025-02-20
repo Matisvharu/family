@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum Familiar</title>
+    <link rel="stylesheet" href="css/geleria.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Nuestra Historia</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="home.html" class="home-link">Home</a></li>
+            </ul>            
+        </nav>
+    </header>
+    <div class="album-container">
+        <h1>Álbum Familiar</h1>
+
+        <div class="gallery">
+            <div class="photo" onclick="openModal(0)">
+                <img src="img/nieve.jpeg" alt="Foto 1">
+            </div>
+            <div class="photo" onclick="openModal(1)">
+                <img src="img/nieve2.0.jpeg" alt="Foto 2">
+            </div>
+            <div class="photo" onclick="openModal(2)">
+                <img src="img/capturado.jpeg" alt="Foto 3">
+            </div>
+            <div class="photo" onclick="openModal(3)">
+                <img src="img/el hijo del demian.jpeg" alt="Foto 4">
+            </div>
+            <div class="photo" onclick="openModal(4)">
+                <img src="img/el hijo del mayor.jpeg" alt="Foto 5">
+            </div>
+            <div class="photo" onclick="openModal(5)">
+                <img src="img/El secuestro del menor.jpeg" alt="Foto 6">
+            </div>
+            <div class="photo" onclick="openModal(6)">
+                <img src="La navidades de los hermanos.jpeg" alt="Foto 7">
+            </div>
+            <div class="photo" onclick="openModal(7)">
+                <img src="Los 2 gigantes.jpeg" alt="Foto 8">
+            </div>
+            <div class="photo" onclick="openModal(8)">
+                <img src="Los 2 piromanos.jpeg" alt="Foto 9">
+            </div>
+            <div class="photo" onclick="openModal(9)">
+                <img src="salida al cerro.jpeg" alt="Foto 10">
+            </div>
+            <div class="photo" onclick="openModal(10)">
+                <img src="Su primera mascota.jpeg" alt="Foto 11">
+            </div>
+            <div class="photo" onclick="openModal(11)">
+                <img src="Un padre y sus 2 hijos.jpeg" alt="Foto 12">
+            </div>
+            <div class="photo" onclick="openModal(13)">
+                <img src="Los 3 y el gato.jpeg" alt="Foto 14">
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="modalDescription" class="modal-description"></div>
+        </div>
+    </div>
+
+    <script src="js/galeria.js"></script>
+</body>
+</html>

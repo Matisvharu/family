@@ -1,0 +1,28 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="book">
+            <div class="page left-page">
+                <h1>Bienvenido a Nuestra Historia</h1>
+                <p>Ingresa la nombre para continuar</p>
+                <p>Ingresa la clave para continuar</p>
+            </div>
+            <div class="page right-page">
+                <form id="loginForm">
+                    <input type="text" id="nombre" placeholder="Escribe tu nombre..." oninput="playSound()">
+                    <input type="password" id="password" placeholder="Escribe tu contraseña...">
+                    <button type="submit">Ingresar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <audio id="penSound" src="sounds/pencil-write-73431.mp3.opdownload"></audio>
+    <script src="js/script.js"></script>
+</body>
+</html>

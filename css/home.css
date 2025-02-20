@@ -1,0 +1,79 @@
+body {
+    font-family: 'Courier New', Courier, monospace; /* Tipografía de máquina de escribir */
+    margin: 0;
+    padding: 0;
+    background: url('https://www.transparenttextures.com/patterns/paper.png'); /* Textura de papel antiguo */
+    color: #4b3d3d; /* Color marrón oscuro */
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d1b48c; /* Borde dorado */
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: #d1b48c; /* Color dorado */
+    border-bottom: 2px solid #4b3d3d; /* Línea inferior marrón oscuro */
+}
+
+h1 {
+    color: #4b3d3d; /* Color marrón oscuro */
+    font-size: 2.5em;
+    margin: 0;
+    font-family: 'Brush Script MT', cursive; /* Tipografía manuscrita */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #4b3d3d; /* Color marrón oscuro */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d2691e; /* Color burdeos al pasar el mouse */
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #4b3d3d; /* Color marrón oscuro */
+}
+
+.image-frame {
+    display: inline-block; /* Permite centrar el cuadro */
+    padding: 5px; /* Espacio interno del marco */
+    border: 5px solid #d1b48c; /* Borde dorado del marco */
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para el marco */
+    border-radius: 10px; /* Bordes redondeados para el marco */
+    margin-top: 30px; /* Espacio superior para el marco */
+}
+
+.main-image {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+    width: 250px; /* Ancho fijo para la imagen */
+}

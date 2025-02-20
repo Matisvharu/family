@@ -1,0 +1,96 @@
+/* Estilos Generales */
+@keyframes luzParpadeante {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.1); }
+}
+
+@keyframes polvoFlotante {
+    0% { transform: translateY(0px); opacity: 0.8; }
+    50% { transform: translateY(-10px); opacity: 1; }
+    100% { transform: translateY(0px); opacity: 0.8; }
+}
+
+@keyframes librosMoviendose {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(1deg); }
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: url('../img/biblioteca-antigua.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: luzParpadeante 5s infinite alternate ease-in-out;
+    position: relative;
+}
+
+/* Animación de polvo flotando */
+body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/polvo.png') repeat;
+    opacity: 0.3;
+    animation: polvoFlotante 6s infinite alternate ease-in-out;
+    pointer-events: none; /* Agrega esta línea */
+}
+
+/* Animación de libros en el fondo */
+.book {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    background: #f9f5e7;
+    border: 3px solid #8b5e3b;
+    animation: librosMoviendose 4s infinite alternate ease-in-out;
+}
+
+.page {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.left-page {
+    background: #f4e3c1;
+    border-right: 2px solid #8b5e3b;
+}
+
+.right-page {
+    background: #f9f5e7;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #8b5e3b;
+    font-family: 'Georgia', serif;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background: #8b5e3b;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #6b3f2d;
+}

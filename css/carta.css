@@ -1,0 +1,165 @@
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif; /* Fuente vintage */
+    background-color: #f9f3e9; /* Color de fondo suave */
+    margin: 0;
+    padding: 20px;
+    color: #5d3f2a; /* Color oscuro para el texto */
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #5d3f2a; /* Color marrón oscuro */
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); /* Sombra de texto */
+    font-family: 'Georgia', serif; /* Fuente vintage */
+}
+
+/* Contenedor de la nota */
+#nota-container {
+    margin-bottom: 20px;
+}
+
+/* Estilo del textarea */
+#carta {
+    width: 100%; /* Esto lo podemos ajustar para no usar todo el ancho */
+    max-width: 500px; /* Limitar el ancho del textarea */
+    height: 60px; /* Altura reducida */
+    padding: 10px;
+    border: 1px solid #b5a99c; /* Color de borde suave */
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace; /* Fuente tipo máquina de escribir */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    margin: 0 auto; /* Centrar el textarea */
+    display: block; /* Hacerlo como un bloque */
+}
+
+/* Estilos de los botones */
+.button-container {
+    margin-top: 10px; /* Espacio entre el textarea y los botones */
+    text-align: center; /* Centrar los botones */
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #8b5a2b; /* Color marrón */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-right: 10px; /* Espacio entre botones */
+    font-family: 'Georgia', serif; /* Fuente vintage */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+}
+
+button:hover {
+    background-color: #7a4e2a; /* Color marrón más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+button:active {
+    transform: translateY(0); /* Efecto de pulsación */
+}
+
+/* Estilo de la nota cuando se muestra */
+#nota-display {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con un poco de transparencia */
+    color: #5d3f2a; /* Color marrón oscuro */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    max-width: 300px; /* Ancho máximo para el recuadro */
+    display: none; /* Oculto por defecto */
+    font-family: 'Courier New', Courier, monospace; /* Fuente tipo máquina de escribir */
+}
+
+/* Estilo específico para el botón "Volver" */
+button.volver {
+    background-color: #5d3f2a; /* Color diferente para el botón "Volver" */
+}
+
+button.volver:hover {
+    background-color: #4c3222; /* Color más oscuro al pasar el ratón */
+}
+
+/* Contenedor de las notas */
+#cartas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Puntos de las notas */
+.punto {
+    width: 30px;  /* Ajusta según sea necesario */
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #8b5a2b; /* Color vintage para los puntos */
+    transition: transform 0.2s;
+}
+
+.punto:hover {
+    transform: scale(1.2);
+}
+
+/* Estilo para el contenedor de la nota */
+#nota-display {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    display: none;
+}
+
+#nota-display.show {
+    display: block;
+}
+
+/* Transición de aparición de la nota */
+#nota-display {
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.volver {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4b3621; /* Fondo vintage para el botón */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: 'Georgia', serif;
+}
+
+.volver:hover {
+    background-color: #3c2d1f; /* Color más oscuro al pasar el ratón */
+}
